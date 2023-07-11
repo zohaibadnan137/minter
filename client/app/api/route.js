@@ -65,7 +65,7 @@ export async function GET(req) {
     if (tokens.length === 0) {
       return NextResponse.json(
         {
-          data: "No tokens owned!",
+          data: ["No tokens owned!"],
         },
         {
           status: 200,
